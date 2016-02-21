@@ -15,7 +15,7 @@
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to raw('<i class="fa fa-pencil-square-o fa-2x"></i>'), new_pin_path
 					%li= link_to raw('<i class="fa fa-user fa-2x"></i>'), edit_user_registration_path
-					%li= link_to raw('<i class="fa fa-sign-out fa-2x"></i>'), destroy_user_session_path
+					%li= link_to raw('<i class="fa fa-sign-out fa-2x"></i>'), destroy_user_session_path, method: :delete
 			-else
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "註冊", new_user_registration_path
